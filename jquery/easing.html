@@ -1,0 +1,37 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="jquery.easing.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        
+        <script>
+            $(function(){
+               $('#button').click(function(){
+               
+               $('#easing').animate({'left': '200px'}, 2000 , 'easeOutQuart', function() {
+                      $(this).css('left', '0px');                    
+               }); 
+            });
+            
+            });
+        </script>
+        
+        
+        <button id="button">KNOP</button>
+        <div id="easing" style="position:relative; width:100px; height:100px; background:green;left:0px;"> 
+            
+            TODO
+        </div>
+            
+        
+    </body>
+</html>

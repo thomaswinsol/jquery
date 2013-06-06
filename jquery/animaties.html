@@ -1,0 +1,36 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        
+         <p>Dit gaat verdwijnen ... </p>
+         
+         <pre>
+                &lt;h1&gt;Titel&lt;/h1&gt;
+         </pre>
+         
+         
+       
+        <script>
+         $('p').click(function() {
+                $(this).fadeOut();
+                
+         });
+         
+         $('pre').click(function() {
+                    $(this).fadeTo(3000,0.5);
+         });
+        </script>
+         
+        
+    </body>
+</html>

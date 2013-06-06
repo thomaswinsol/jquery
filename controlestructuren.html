@@ -1,0 +1,95 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+        <!---
+        // Oef1--------------------------
+        /*var result=0;
+        for (var i = 1; i <=20; i++) {
+            result = Math.sqrt(i);
+            if ( (result*2) == i) {
+                alert("Kwadraat van "+ result + "=" + i);
+            }
+            
+        }*/
+
+        // Oef 2-------------------------
+        /*
+        var input = prompt("Geef een getal ");
+        input = parseInt(input,10);
+        if (input <= 0) {
+            alert("Geef een getal >0");
+        }
+        else {
+            alert( "Waarde is " + getSom(input) );
+            
+        }
+
+
+        function getSom(getal) {
+            var som=0;
+            for (var i = 1; i <=getal; i++) {            
+                som += i;
+            }
+            return som;
+        }
+        */
+       
+       // Oef 3-----------------------------
+       /*
+         var lengte = parseInt(prompt ("Lengte="));
+         var breedte = parseInt(prompt("Breedte="));
+         var hoogte = parseInt(prompt ("Hoogte="));
+         
+         alert ("Totale oppervlakte Woonkamer ="+ getOppervlakte(lengte,breedte,hoogte));
+         
+         
+         function getOppervlakte(lengte, breedte, hoogte) {
+            var totlengte  = (lengte* hoogte)*2;
+            var totbreedte = (breedte * hoogte)*2;
+            
+            return (totlengte+totbreedte);
+         }
+        */
+        
+        // Oef 4 -----------------------------
+            
+            var aantal = parseInt(prompt ("Aantal abonnementen="));
+            
+            var myArray = new Array();
+            for (var i = 0; i <=aantal; i++) {   
+                
+                var aanbieder= prompt("Aanbieder=");
+                var aansluitkost = parseInt( prompt("Aansluitingskosten="));
+                var maandlast= parseInt( prompt("Maandlasten=")); 
+                var totaal =0;
+                myArray[i] = [aanbieder, aansluitkost, maandlast, totaal];                                       
+                                
+            }                
+            
+            var aantalmaanden = parseInt( prompt("Aantal maanden="));
+            
+            
+            totaal=0;
+            for (var i = 0; i <=aantal; i++) {                  
+                   myArray[i][3] = myArray[i][1]+(myArray[i][2]*aantalmaanden);
+            }
+            alert(myArray);
+            //myArray = myArray.sort;          
+              
+         
+         
+        -->
+        </script>
+        
+    </body>
+</html>

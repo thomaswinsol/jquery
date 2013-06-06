@@ -1,0 +1,53 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        
+        
+        <script>
+            var obj = {
+                key1: 1,
+                key2: 42
+            }
+            
+            $.each(obj, function(key, value) {
+                alert(key + ' = ' + value);
+            });
+            
+            
+            $(function() {
+                
+               $('li').each(function(index , elm) {
+                 $(elm).prepend('span>'+(index+1)+ '</span>'); 
+               });    
+               
+               $('.menu').css('color','white');
+               $('.menu').css('-webkit-border-radius', '10px');
+               
+               
+               $('.menu2').css({
+                  borderRadius: '5px', 
+                  // quotes in formaat css
+                  '-moz-border-radius': '5px',
+                  WebkitBorderRadius: '5px'
+               });
+            });
+            
+        </script>
+        
+        
+        <ul class="menu">
+            <li>Eerste</li>
+            <li>Tweede</li>
+        </ul>
+    </body>
+</html>

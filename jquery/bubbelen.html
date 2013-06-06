@@ -1,0 +1,47 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script>
+            $(function(){
+            $("#outer").click(function(){
+                alert("Hello from outer");
+            });
+            
+            $("#inner").click(function(e){
+                e.stopPropagation();  // stop met bubbelen
+                alert("Hello from inner");
+            });
+            
+            
+            $('body').mouseover(function(e){
+              console.log(e.target.nodeName);  
+            });
+            
+            $('body').keypress(function(e){
+               alert(e.which); 
+            });
+            
+            });
+            
+        </script>
+        
+        <a href="">xxx</a>
+        <div id="outer">
+            Outer
+            <div id="inner">
+                Inner
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

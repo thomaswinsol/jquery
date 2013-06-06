@@ -1,0 +1,46 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chaining met jquery</title>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script>
+            $(function(){
+            $(".selector").addClass('test').css('color','red').removeClass('selector');
+            //altijd verder = krachtig maar onoverzichtelijk
+            
+            var elm = $('input:text');
+            //not a number
+            var maxLength = parseInt('0'+elm.attr('maxlength'), 10);
+            
+            if (maxLength > 20 ){
+                elm.val('Max ' + maxLength + ' chars');
+            }
+            
+            var content = $('.selector').html('dit is de nieuwe inhoud');
+            
+            $('div').hasClass(".selector");
+            
+            });
+        </script>
+        
+        
+        <div class="selector">
+            TODO write content
+        </div>
+        
+        <form>
+            
+            <input type="text" name="voornaam" maxlength="25"/>
+            
+        </form>
+        
+        
+    </body>
+</html>

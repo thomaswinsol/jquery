@@ -1,0 +1,33 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chaining met jquery</title>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+       
+        
+        <div class="selector">
+            <h1>Titel</h1>
+            <p><a href="#">url</a></p>                
+        </div>
+        
+         <script>
+            $('.selector').find('a'); //hetzelfde als $('.selector a');
+            $('.selector').siblings('a'); // alle a met dezelfde ouder
+            $('.selector').parent();   // de directe ouder
+            
+            
+            $('.menu').prepend('<li>Bovenaan<li>');
+            $('<li>Vierde</li>').append('.menu');   
+            
+            $('.menu li:first').before('<li>Voor</li>').after("<li>Na<li>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Events</title>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        <div>TODO write content</div>
+        
+        <a href="www.google.be" onclick="myFunction();return false;">Klik</a>
+        
+        
+        <script>
+            var obj = {
+                
+                func: function() {
+                    alert('Doe iets');
+                    
+                },
+                
+                func2: function() {
+                    this.func1();
+                }
+            };
+            
+            
+            
+            obj.func2(); // alert
+            
+        </script>    
+        
+            <p>U kunt ook hier klikken</p>
+            
+        
+    </body>
+</html>
